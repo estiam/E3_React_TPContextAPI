@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CounterContext from './CounterContext';
 
-const CounterContextProvider = () => {
+const CounterContextProvider = ({children}) => {
   const [counter, setCounter] =useState(0);
 
   const increment = () => {
